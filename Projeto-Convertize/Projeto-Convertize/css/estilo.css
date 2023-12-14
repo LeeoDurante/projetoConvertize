@@ -1,0 +1,54 @@
+
+.form {
+    text-align: right;
+}
+.dropdown-menu a {
+    text-decoration: none;
+}
+#rodape {
+    background-color: black;
+    text-align: center;
+    color: aliceblue;
+    font-style: italic;
+    position: absolute;
+    bottom: 0; 
+    width: 100%; 
+}
+
+.custom-image {
+    width: 100%; /* Defina a largura desejada */
+    height: auto; /* A altura ajusta automaticamente para manter a proporção original */
+    object-fit: cover; /* Ajusta o dimensionamento da imagem mantendo a proporção */
+}
+
+.logoNext {
+    text-align: center;
+}
+.us {
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 250px;
+}
+
+
+.carousel-item img {
+    width: 300px;
+    aspect-ratio: auto 1000 / 374;
+    height: 450px;
+}
+
+
+.featurette-image {
+    box-shadow: 2px 2px 2px;
+}
+
+
+
+
+.logoNext {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}

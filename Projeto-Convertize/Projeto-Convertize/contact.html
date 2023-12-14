@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="camisas em promocao, polo, bones, desconto, camisetas">
+    <title>NexStore - Contato</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+
+</head>
+
+<body>
+    <div id="navbar" class="container-fluid">
+        <div class="row">
+            <span class=" bg-success text-center text-white">Frete Grátis em compras acima de R$ 199</span>
+        </div>
+        <header class="py-3 mb-4 border-bottom">
+            <div class="container d-flex flex-wrap justify-content-center">
+                <a id="back">
+                
+                <a href="./index.html" class="nav-link text-dark">
+                    <img class="logoNext" src="./img/back.png" alt="voltar" width="15" height="15">Voltar</a>
+                
+   
+                <a id="logo" class="navbar-brand d-flex justify-content-center flex-grow-1">
+                    <img class="logoNext" src="./img/logo.png" alt="logoNextStore" width="200" height="100">
+                </a>
+                <div class="dropdown">
+                    <button class="btn btn-ligth " type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                    aria-expanded="false"> Minha Conta
+                     <img src="./img/person_FILL0_wght400_GRAD0_opsz24.png" alt="pesquisar" width="20" height="20">
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Meus dados</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Pedidos </a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Favoritos</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#">Sair </a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </header>
+        <div class="form">
+            <form class="row" id="formm">
+                <fieldset>
+
+                    <h1 class="text-center">Fale com a gente</h1>
+
+                    <div class="row">
+                        <label class="col-md-4 form" for="inputNome">Nome</label>
+                        <div class="col-md-4">
+                            <input id="inputNome" name="inputNome" type="text" placeholder="Nome Completo"
+                                class="form-control input-md" required maxlength="100">
+
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <label class="col-md-4 form" for="inputEmail">E-mail</label>
+                        <div class="col-md-4">
+                            <input id="inputEmail" name="inputEmail" type="email" class="form-control input-md"
+                                maxlength="40">
+
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <label class="col-md-4 form" for="inputTel">Telefone</label>
+                        <div class="col-md-4">
+                            <input id="inputTel" name="inputTel" type="number" placeholder="(xx) xxxxx-xxxx"
+                                class="form-control input-md">
+
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <label class="col-md-4 form" for="selectAssunto">Assunto</label>
+                        <div class="col-md-4">
+                            <select id="selectAssunto" name="selectAssunto" class="form-control">
+                                <option value="s">Sugestão</option>
+                                <option value="r">Reclamação</option>
+                                <option value="e">Elogio</option>
+                                <option value="d">Dúvidas</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <label class="col-md-4 form" for="textMsg">Mensagem</label>
+                        <div class="col-md-4">
+                            <textarea class="form-control" id="textMsg" name="textMsg"
+                                placeholder="Digite aqui"></textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <label class="col-md-4 control-label" for="buttonEnviar"></label>
+                        <div class="col-md-3">
+                            <button id="buttonEnviar" name="buttonEnviar" class="btn btn-success" type="button"
+                                onclick="cadastrar()">Enviar</button>
+                            <button id="buttonLimpar" name="buttonLimpar" class="btn btn-danger" type="reset"
+                                value="Reset">Limpar</button>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+        <br>
+
+        <div class="container text-center">
+            <h3>Localização</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29761.712757437585!2d-47.8377926318089!3d-21.18365240169274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9bee6b29c840d%3A0xd8be59ae8a7e9cc9!2sConvertize!5e0!3m2!1spt-BR!2sbr!4v1702157782435!5m2!1spt-BR!2sbr"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="container">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+                <div class="col mb-3">
+
+                </div>
+
+                <div class="col mb-3 me-auto">
+                    <h5>Atendimento</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark fs-4">
+                                <img src="./img/settings_phone_FILL0_wght400_GRAD0_opsz24.png" alt="pesquisar"
+                                    width="30" height="45">16 90101.0101</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Seg à Sex das 08:00 as
+                                18:00</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Email:
+                                contato@nextstore.com.br</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col mb-3">
+                    <h5>Institucional</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Quem Somos</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Nossas Lojas</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Trabalhe Conosco</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Política de
+                                Privacidade</a></li>
+                    </ul>
+                </div>
+
+                <div class="col mb-3">
+                    <h5>Ajuda</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Política de
+                                Entrega</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Trocas e
+                                Devoluções</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Central de
+                                Atendimento</a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

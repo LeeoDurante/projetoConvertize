@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="camisas em promocao, polo, bones, desconto, camisetas">
+    <title>NexStore</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/estilo.css">
+  
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+</head>
+
+<body>
+    <div id="navbar" class="container-fluid">
+        <div class="row">
+            <span class=" bg-success text-center text-white">Frete Grátis em compras acima de R$ 199</span>
+        </div>
+        <header class="py-3 mb-4 border-bottom">
+            <div class="container d-flex flex-wrap justify-content-center">
+
+                <form id="searchForm" onsubmit="searchProducts(); return false;"
+                    class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none"
+                    role="search">
+                    <input id="searchInput" class="form-control me-2" type="search" placeholder="O que você procura?"
+                        aria-label="Search">
+                    <button class="btn" type="submit">
+                        <img src="./img/search_FILL0_wght400_GRAD0_opsz24.png" alt="pesquisar" width="20" height="20">
+                    </button>
+                </form>
+
+                <a id="logo" class="navbar-brand d-flex justify-content-center flex-grow-1">
+                    <img class="logoNext" src="./img/logo.png" alt="logoNextStore" width="200" height="100">
+                </a>
+                <div class="dropdown">
+                    <button class="btn btn-ligth " type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                        aria-expanded="false"> Minha Conta
+                        <img src="./img/person_FILL0_wght400_GRAD0_opsz24.png" alt="pesquisar" width="20" height="20">
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+                    </button>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+                        <li><a class="dropdown-item" href="#">Meus dados</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Pedidos </a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Favoritos</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#">Sair </a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </header>
+        <div class="container">
+
+            <header class="d-flex justify-content-center py-3">
+                <ul class="nav nav-pills TEX">
+                    <li class="nav-item">
+                        <div class="container">
+
+                            <header class="d-flex justify-content-center py-3">
+                                <ul class="nav nav-pills TEX">
+                                    <li class="nav-item">
+                                        <a href="./camisetas.html" class="nav-link text-dark">
+                                            <h5>CAMISETAS</h5>
+
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="./polo.html" class="nav-link text-dark">
+                                            <h5>CAMISA POLO</h5>
+
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="./shorts.html" class="nav-link text-dark">
+                                            <h5>SHORTS</h5>
+
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="./bones.html" class="nav-link text-dark">
+                                            <h5>BONES</h5>
+
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="./outlet.html" class="nav-link text-danger">
+                                            <h5>OUTLET</h5>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </header>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </header>
+        </div>
+
+    </div>
+    <br />
+    <br />
+    <div class="row-container-fluid">
+
+        <section id="pagInicial">
+            <article class="pagInicial">
+                <div id="carouselnextStore" class="carousel carousel-light slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselnextStore" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselnextStore" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselnextStore" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="./img/carrousel1.png" class="d-block w-100" alt="Promocao 30% Off">
+                            <div class="carousel-caption d-none d-md-block">
+
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="https://artcap.com.br/wp-content/uploads/2022/08/banner-artcap-site-2.png"
+                                class="d-block w-100" alt="Banner 2">
+                            <div class="carousel-caption d-none d-md-block">
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://img.freepik.com/vetores-premium/arte-publicitaria-da-campanha-de-promocao-da-black-friday_25129-720.jpg?w=2000"
+                                class="d-block w-100" alt="Banner 3">
+                            <div class="carousel-caption d-none d-md-block text-dark">
+
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselnextStore"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselnextStore"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </article>
+            <article class="container products">
+
+                <div id="Ppmais">
+                    <h5 class="text-strong">Produtos mais comprados do mês</h5>
+                    <div class="container mt-4">
+                        <div id="products-container" style="display: inline-flex;"></div>
+                    </div>
+                </div>
+
+                <div id="Ppmaisvis">
+                    <h5 class="text-strong">Produtos mais visitados</h5>
+                    <div class="container mt-4">
+                        <div class="row" id="mostVisitedProducts"> </div>
+                    </div>
+                </div>
+
+                <h5 class="text-strong">Resultado da busca</h5>
+                <div class="container mt-4">
+                    <div class="row" id="resultadosearch">
+
+                    </div>
+                </div>
+            </article>
+
+            <div class="container-fluid text-center ">
+
+                <img src="./img/promoBones.png" class="img-fluid" alt="...">
+            </div>
+        </section>
+
+    </div>
+
+    <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+            <div class="col mb-3">
+
+            </div>
+
+            <div class="col mb-3 me-auto">
+                <h5>Atendimento</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark fs-4">
+                            <img src="./img/settings_phone_FILL0_wght400_GRAD0_opsz24.png" alt="pesquisar" width="30"
+                                height="45">16 90101.0101</a></li>
+                    <li class="nav-item mb-2"><a class="nav-link p-0 text-secondary">Seg à Sex das 08:00 as
+                            18:00</a></li>
+                    <li class="nav-item mb-2"><a class="nav-link p-0 text-secondary">Email:
+                            contato@nextstore.com.br</a></li>
+
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>Institucional</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Quem Somos</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Nossas Lojas</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Trabalhe Conosco</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Política de
+                            Privacidade</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>Ajuda</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a class="nav-link p-0 text-secondary">Política de Entrega</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="./contact.html" class="nav-link p-0 text-secondary">Trocas e
+                            Devoluções</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="./contact.html" class="nav-link p-0 text-secondary">Central de
+                            Atendimento</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // URL do script proxy PHP
+        const proxyUrl = "service/proxy.php";
+
+        // Função para buscar e exibir os produtos
+        async function fetchAndDisplayProducts(url, limit) {
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+
+                // Verifique se há resultados
+                if (data.results && data.results.length > 0) {
+                    const productsContainer = document.getElementById("products-container");
+                    const mostVisitedProductsContainer = document.getElementById("mostVisitedProducts");
+
+                    // Loop pelos resultados e exiba cada produto até o limite
+                    for (let i = 0; i < Math.min(limit, data.results.length); i++) {
+                        const product = data.results[i];
+
+                        // Criação do card Bootstrap
+                        const cardElement = document.createElement("div");
+                        cardElement.classList.add("card", "mb-3", "col-md-3");
+
+                        // Configuração do conteúdo do card
+                        let cardContent = `
+            <img src="https://io.convertiez.com.br/m/shopdemo/${product.image}" class="card-img-top custom-image" alt="${product.name}" style="max-width: 100%; height: auto;">
+            <div class="card-body">
+                <h5 class="card-title">${product.name}</h5>
+                <p class="card-text">${product.title}`;
+
+        // Verifica se os preços são diferentes
+        if (product.unit_price !== product.sale_price) {
+            cardContent += `
+                <p class="card-text">Preço de venda: R$ ${product.unit_price}</p>`;
+        } else {
+            cardContent += `
+                <p class="card-text">Preço: ${product.unit_price}</p>
+                <p class="card-text">Preço de venda: ${product.sale_price || "N/A"}</p>`;
+        }
+
+                        // Adiciona o restante do conteúdo do card
+                        cardContent += `
+                        <a href="${product.get_absolute_url}" class="btn btn-primary" target="_blank">Ver mais</a>
+                    </div>`;
+
+                        // Define o conteúdo do card
+                        cardElement.innerHTML = cardContent;
+
+                        // Adiciona o card ao container
+                        productsContainer.appendChild(cardElement);
+                    }
+
+                    // Se houver mais produtos, exiba o restante em mostVisitedProductsContainer
+                    if (limit < data.results.length) {
+    // Cria uma nova 'row' do Bootstrap
+    const rowElement = document.createElement("div");
+    rowElement.classList.add("row");
+
+    for (let i = limit; i < data.results.length; i++) {
+        const product = data.results[i];
+
+        // Criação do card Bootstrap para a seção mostVisitedProductsContainer
+        const productCardElement = document.createElement("div");
+        productCardElement.classList.add("card", "mb-3", "col-md-3"); // col-md-3 para ocupar 1/4 da largura em dispositivos médios
+
+        // Configuração do conteúdo do card
+        let cardContent = `
+            <img src="https://io.convertiez.com.br/m/shopdemo/${product.image}" class="card-img-top custom-image" alt="${product.name}" style="max-width: 100%; height: auto;">
+            <div class="card-body">
+                <h5 class="card-title">${product.name}</h5>
+                <p class="card-text">${product.title}`;
+
+        // Verifica se os preços são diferentes
+        if (product.unit_price !== product.sale_price) {
+            cardContent += `
+                <p class="card-text">Preço de venda: R$ ${product.unit_price}</p>`;
+        } else {
+            cardContent += `
+                <p class="card-text">Preço: ${product.unit_price}</p>
+                <p class="card-text">Preço de venda: ${product.sale_price || "N/A"}</p>`;
+        }
+
+        // Adiciona o restante do conteúdo do card
+        cardContent += `
+                <a href="${product.get_absolute_url}" class="btn btn-primary" target="_blank">Ver mais</a>
+            </div>`;
+
+        // Define o conteúdo do card
+        productCardElement.innerHTML = cardContent;
+
+        // Adiciona o card à 'row'
+        rowElement.appendChild(productCardElement);
+    }
+
+    // Adiciona a 'row' ao container
+    mostVisitedProductsContainer.appendChild(rowElement);
+}
+
+                    // Verifique se há uma próxima página e exiba os produtos
+                    if (data.next) {
+                        await fetchAndDisplayProducts(data.next, limit);
+                    }
+                }
+            } catch (error) {
+                console.error("Erro ao buscar produtos:", error);
+            }
+        }
+
+        // Limite de 4 produtos
+        const limit = 4;
+
+        // Inicie o processo de busca e exibição
+        fetchAndDisplayProducts(proxyUrl, limit);
+
+
+        function searchProducts() {
+            const searchTerm = document.getElementById("searchInput").value.toLowerCase();
+
+            // Limpe os resultados anteriores e reexiba as divs products-container e mostVisitedProducts
+            const searchResultsContainer = document.getElementById("resultadosearch");
+            searchResultsContainer.innerHTML = "";
+            document.getElementById("products-container").style.display = "inline-flex";
+            document.getElementById("mostVisitedProducts").style.display = "block";
+
+            // Busque nos produtos exibidos nas divs products-container e mostVisitedProducts
+            const productsContainers = document.querySelectorAll("#products-container div, #mostVisitedProducts div");
+
+            let hasResults = false;
+
+            // Percorra cada produto e verifique se corresponde ao termo de pesquisa
+            productsContainers.forEach(productContainer => {
+                const productName = productContainer.querySelector("h2").textContent.toLowerCase();
+                const productDescription = productContainer.querySelector("p").textContent.toLowerCase();
+
+                if (productName.includes(searchTerm) || productDescription.includes(searchTerm)) {
+                    // Se corresponder, adicione-o aos resultados da pesquisa
+                    const clone = productContainer.cloneNode(true);
+                    searchResultsContainer.appendChild(clone);
+                    hasResults = true;
+
+                    document.getElementById("Ppmais").style.display = "none";
+                    document.getElementById("Ppmaisvis").style.display = "none";
+                }
+            });
+
+            // Se não houver resultados, exiba a mensagem "O produto não existe" e oculte as divs products-container e mostVisitedProducts
+            if (!hasResults) {
+                const noResultsMessage = document.createElement("p");
+                noResultsMessage.textContent = "O produto não existe";
+                searchResultsContainer.appendChild(noResultsMessage);
+
+                document.getElementById("Ppmais").style.display = "none";
+                document.getElementById("Ppmaisvis").style.display = "none";
+            }
+        }
+    </script>
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
